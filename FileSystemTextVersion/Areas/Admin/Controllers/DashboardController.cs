@@ -1,0 +1,18 @@
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using static FileSystemUtility.Utilities.CommonConstant;
+
+namespace FileSystemTextVersion.Areas.Admin.Controllers
+{
+    [Authorize(AuthenticationSchemes = CookieAuthenticationDefaults.AuthenticationScheme)]
+    [Area("Admin")]
+    
+    public class DashboardController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View("~/Areas/Admin/Views/Dashboard/Dashboard.cshtml");
+        }
+    }
+}
