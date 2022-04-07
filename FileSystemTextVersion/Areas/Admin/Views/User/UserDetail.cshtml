@@ -23,7 +23,7 @@
                     <form class="custom-validation" asp-action="SaveUserProfile" asp-controller="User" asp-area="Admin" novalidate="">
                         <div class="mb-3">
                             <label class="form-label">Select User Role</label>
-                            <select id="ddRole" asp-for="inRole" class="select2 form-control select2-multiple" onchange="changePanel();" data-placeholder="Choose ...">
+                            <select id="ddRole" asp-for="inRole" class="select2 form-control select2-multiple"  data-placeholder="Choose ...">
                                 <option value="">Select Role</option>
                                 <option value="1">Admin</option>
                                 <option value="2">Division Admin</option>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Division Name</label>
-                            <select id="ddDivision" onchange="OnDivisionChangeLoadDesk();OnDivisionChangeLoadStore();" asp-for="inDivisionId" class="select2 form-control select2-multiple" data-placeholder="Choose ...">
+                            <select id="ddDivision" onchange="OnDivisionChangeLoadDesk();" asp-for="inDivisionId" class="select2 form-control select2-multiple" data-placeholder="Choose ...">
                                 <option value="">Select Division Name</option>
                             </select>
                         </div>
@@ -67,13 +67,7 @@
                                 <option value="">Select Zone Name</option>
                             </select>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Store Name</label>
-                            <select id="ddStore" asp-for="inStoreId" class="select2 form-control select2-multiple" data-placeholder="Choose ...">
-                                <option value="">Select Store Name</option>
-
-                            </select>
-                        </div>
+                        
                         <div class="mb-3">
                             <label class="form-label">First Name</label>
                             <input asp-for="stFirstName" type="text" class="form-control" placeholder="First Name">
@@ -143,7 +137,6 @@
         $(document).ready(function () {
             OnZoneChange(true);
             OnDivisionChangeLoadDesk(true);
-            OnDivisionChangeLoadStore(true);
             OnDepartmentChange(true);
 
 

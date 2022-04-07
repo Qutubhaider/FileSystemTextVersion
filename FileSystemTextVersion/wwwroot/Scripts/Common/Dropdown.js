@@ -48,7 +48,7 @@ function OnDivisionChangeLoadDesk(flgIsEdit = false) {
     }, function () { });
 }
 
-function OnDivisionChangeLoadStore(flgIsEdit = false) {
+/*function OnDivisionChangeLoadStore(flgIsEdit = false) {
     var loData = new Object();
     if (flgIsEdit) {
         var liDivisionId = $('#inDivisionId').val();
@@ -70,9 +70,9 @@ function OnDivisionChangeLoadStore(flgIsEdit = false) {
         if (flgIsEdit)
             $("#ddStore").val($("#inStoreId").val());
     }, function () { });
-}
+}*/
 
-function OnStoreChange(flgIsEdit = false) {
+/*function OnStoreChange(flgIsEdit = false) {
     var loData = new Object();
     if (flgIsEdit) {
         var liStoreId = $('#inStoreId').val();
@@ -94,9 +94,9 @@ function OnStoreChange(flgIsEdit = false) {
         if (flgIsEdit)
             $("#ddRoom").val($("#inRoomId").val());
     }, function () { });
-}
+}*/
 
-function OnRoomChange(flgIsEdit = false) {
+/*function OnRoomChange(flgIsEdit = false) {
     var loData = new Object();
     if (flgIsEdit) {
         var liRoomId = $('#inRoomId').val();
@@ -118,9 +118,9 @@ function OnRoomChange(flgIsEdit = false) {
         if (flgIsEdit)
             $("#ddAlmirah").val($("#inAlmirahId").val());
     }, function () { });
-}
+}*/
 
-function OnAlmirahChange(flgIsEdit = false) {
+/*function OnAlmirahChange(flgIsEdit = false) {
     var loData = new Object();
     if (flgIsEdit) {
         var liAlmirahId = $('#inAlmirahId').val();
@@ -142,7 +142,7 @@ function OnAlmirahChange(flgIsEdit = false) {
         if (flgIsEdit)
             $("#ddShelve").val($("#inShelvesId").val());
     }, function () { });
-}
+}*/
 
 function OnDepartmentChange(flgIsEdit = false) {
     var loData = new Object();
