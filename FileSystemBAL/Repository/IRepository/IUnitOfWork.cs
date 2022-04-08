@@ -22,6 +22,7 @@ namespace FileSystemBAL.Repository.IRepository
         IFileRepository FileRepository { get; }
         IIssueFileHistoryRepository IssueFileHistoryRepository { get; }
         ICaseRepository CaseRepository { get; }
+        ITextTranferRepository TextTranferRepository { get; }
         void Save();
     }
 }
